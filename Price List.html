@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Green Laundry</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+<nav>
+
+<div class="logo"> <img src="img/laundry-Aq2NvvvjgOIMpD31.avif" alt="The Green Laundry" width="120" height="70"></div>
+
+<ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="our services.html">Services</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Price List.html">Price List</a></li>
+</ul>
+
+<div class="social">
+    <a href="https://facebook.com" target="_blank">📘</a>
+    <a href="https://instagram.com" target="_blank">📸</a>
+    <a href="https://linkedin.com" target="_blank">💼</a>
+    <a href="https://twitter.com" target="_blank">✖</a>
+</div>
+</nav>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e2e5e9;
+}
+
+/* NAVBAR */
+nav {
+    background: #efe1c4;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    color: #2c7a7b;
+}
+
+.social span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    color: #555;
+}
+
+/* PRICE SECTION */
+.price-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    width: 600px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px 10px;
+    border: none;
+    background: #2c7a7b;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #205e5f;
+}
+
+/* FOOTER */
+footer {
+    background: #efe1c4;
+    padding: 1%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #444;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Our Price List</h1>
+    <p>Affordable & Premium Laundry Services</p>
+</section>
+
+<!-- PRICE LIST -->
+<section class="price-section">
+
+    <div class="card">
+        <h2>Women's Price List</h2>
+        <img src="img/women-rate-list-2023_page-0001-YrDXlqM5l9fbJX8v.avif" alt="">
+        
+    </div>
+
+    <div class="card">
+        <h2>Men's Price List</h2>
+         <img src="img/mens-rate-list-2023_page-0001-AoPNvq88ENTkNB19.avif" alt="">
+    </div>
+
+    <div class="card">
+        <h2>Home Linen</h2>
+        <img src="img/home-linen-rate-list-2022-2023-1-_page-0001-YBgyrevPnnCKvWoJ.avif" alt="">
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+
+        <div>
+            <h4>Contact</h4>
+            <p>📞 95654 43000</p>
+           
+        </div>
+
+        <div>
+            <h4>Address</h4>
+            <p>📍 The Green Laundry</p>
+            <p>Varanasi, Uttar Pradesh</p>
+        </div>
+
+        <div>
+            <h4>Opening Hours</h4>
+            <p>Mon - Sat : 9 AM - 8:30 PM</p>
+            <p>Sunday : Closed</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 The Green Laundry
+    </div>
+</footer>
+
+<script>
+// BUTTON CLICK
+document.querySelectorAll(".btn").forEach(button => {
+    button.addEventListener("click", () => {
+        alert("Price list opening soon 🚀");
+    });
+});
+
+// NAV CLICK
+document.querySelectorAll(".nav-links li").forEach(item => {
+    item.addEventListener("click", () => {
+        alert(item.innerText + " section coming soon!");
+    });
+});
+</script>
+
+</body>
+</html>
